@@ -1,11 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Get all active processes
-processes=$(ls /proc/[0-9]*)
-
-# Filter and print processes with "bash" in their name
-for pid in $processes; do
-  if [[ $(cat "$pid/comm") == "bash" ]]; then
-    echo "$pid $(cat "$pid/comm")"
-  fi
-done
+pgrep -l bash
