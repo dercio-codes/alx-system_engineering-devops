@@ -2,6 +2,3 @@
 # Beheaded process
 
 pgrep -f 7-highlander | xargs kill -9
-
-# Print a confirmation message
-echo "7-highlander process killed"
