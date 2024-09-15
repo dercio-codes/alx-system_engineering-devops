@@ -37,13 +37,4 @@ def recurse(subreddit, hot_list=[], after=None):
     else:
         # If the subreddit is invalid, return None
         return None
-
-# Example usage:
-if __name__ == '__main__':
-    subreddit_name = 'programming'  # Example subreddit
-    titles = recurse(subreddit_name)
-    if titles is not None:
-        for title in titles:
-            print(title)
-    else:
-        print("None")
+    
